@@ -1,0 +1,436 @@
+{
+  "injected": [
+    {
+      "state": "空闲",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "status",
+        "phase": "空闲",
+        "job_id": null,
+        "text": "设备当前空闲。"
+      },
+      "final": "听雨。设备当前空闲。后来呢？",
+      "passed": true
+    },
+    {
+      "state": "空闲",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "status",
+        "phase": "空闲",
+        "job_id": null,
+        "text": "设备当前空闲。"
+      },
+      "final": "设备当前空闲。",
+      "passed": true
+    },
+    {
+      "state": "空闲",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "status",
+        "phase": "空闲",
+        "job_id": null,
+        "text": "设备当前空闲。"
+      },
+      "final": "设备当前空闲。",
+      "passed": true
+    },
+    {
+      "state": "空闲",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "status",
+        "phase": "空闲",
+        "job_id": null,
+        "text": "设备当前空闲。"
+      },
+      "final": "设备当前空闲。",
+      "passed": true
+    },
+    {
+      "state": "加热中",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "status",
+        "phase": "加热中",
+        "job_id": "bbcf9650276547d691c4f90fe82053cb",
+        "text": "铁观音当前加热中。"
+      },
+      "final": "听雨。铁观音当前加热中。后来呢？",
+      "passed": true
+    },
+    {
+      "state": "加热中",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "status",
+        "phase": "加热中",
+        "job_id": "2d631c7ef583480fa816ebb40a420952",
+        "text": "铁观音当前加热中。"
+      },
+      "final": "铁观音当前加热中。",
+      "passed": true
+    },
+    {
+      "state": "加热中",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "status",
+        "phase": "加热中",
+        "job_id": "ec4faf04c4514dbb837fe203ff5c8d5a",
+        "text": "铁观音当前加热中。"
+      },
+      "final": "铁观音当前加热中。",
+      "passed": true
+    },
+    {
+      "state": "加热中",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "status",
+        "phase": "加热中",
+        "job_id": "5316ba64fc68499a9e0d787f5a728700",
+        "text": "铁观音当前加热中。"
+      },
+      "final": "铁观音当前加热中。",
+      "passed": true
+    },
+    {
+      "state": "出水中",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "status",
+        "phase": "出水中",
+        "job_id": "ec5c007095f94084b3b8732c02e8d713",
+        "text": "铁观音当前出水中。"
+      },
+      "final": "听雨。铁观音当前出水中。后来呢？",
+      "passed": true
+    },
+    {
+      "state": "出水中",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "status",
+        "phase": "出水中",
+        "job_id": "b4779aadd19141698b2fda12430c4bf8",
+        "text": "铁观音当前出水中。"
+      },
+      "final": "铁观音当前出水中。",
+      "passed": true
+    },
+    {
+      "state": "出水中",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "status",
+        "phase": "出水中",
+        "job_id": "43d806341ed5493a899a8336276b3b9f",
+        "text": "铁观音当前出水中。"
+      },
+      "final": "铁观音当前出水中。",
+      "passed": true
+    },
+    {
+      "state": "出水中",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "status",
+        "phase": "出水中",
+        "job_id": "0e44eeaaa023470a9de394d95d7962f6",
+        "text": "铁观音当前出水中。"
+      },
+      "final": "铁观音当前出水中。",
+      "passed": true
+    },
+    {
+      "state": "已完成",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "completed",
+        "phase": "已完成",
+        "job_id": "86d232583021412c8380407a71014f9e",
+        "text": "控制器已确认这杯铁观音泡茶完成，请小心取杯。"
+      },
+      "final": "听雨。控制器已确认这杯铁观音泡茶完成，请小心取杯。后来呢？",
+      "passed": true
+    },
+    {
+      "state": "已完成",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "completed",
+        "phase": "已完成",
+        "job_id": "319c5a0fb6c7428b90b4ba891e4180ea",
+        "text": "控制器已确认这杯铁观音泡茶完成，请小心取杯。"
+      },
+      "final": "控制器已确认这杯铁观音泡茶完成，请小心取杯。",
+      "passed": true
+    },
+    {
+      "state": "已完成",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "completed",
+        "phase": "已完成",
+        "job_id": "cca2483bb36843658782098364b76795",
+        "text": "控制器已确认这杯铁观音泡茶完成，请小心取杯。"
+      },
+      "final": "控制器已确认这杯铁观音泡茶完成，请小心取杯。",
+      "passed": true
+    },
+    {
+      "state": "已完成",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "completed",
+        "phase": "已完成",
+        "job_id": "7593e95343f242dab6636aacfb620efd",
+        "text": "控制器已确认这杯铁观音泡茶完成，请小心取杯。"
+      },
+      "final": "控制器已确认这杯铁观音泡茶完成，请小心取杯。",
+      "passed": true
+    },
+    {
+      "state": "已停止",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "status",
+        "phase": "已停止",
+        "job_id": null,
+        "text": "设备当前已停止。"
+      },
+      "final": "听雨。设备当前已停止。后来呢？",
+      "passed": true
+    },
+    {
+      "state": "已停止",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "status",
+        "phase": "已停止",
+        "job_id": null,
+        "text": "设备当前已停止。"
+      },
+      "final": "设备当前已停止。",
+      "passed": true
+    },
+    {
+      "state": "已停止",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "status",
+        "phase": "已停止",
+        "job_id": null,
+        "text": "设备当前已停止。"
+      },
+      "final": "设备当前已停止。",
+      "passed": true
+    },
+    {
+      "state": "已停止",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "status",
+        "phase": "已停止",
+        "job_id": null,
+        "text": "设备当前已停止。"
+      },
+      "final": "设备当前已停止。",
+      "passed": true
+    },
+    {
+      "state": "缺杯",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "no_cup",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "未检测到杯子，已禁止出水。请放好杯子后重新发令。"
+      },
+      "final": "未检测到杯子，已禁止出水。请放好杯子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺杯",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "no_cup",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "未检测到杯子，已禁止出水。请放好杯子后重新发令。"
+      },
+      "final": "未检测到杯子，已禁止出水。请放好杯子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺杯",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "no_cup",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "未检测到杯子，已禁止出水。请放好杯子后重新发令。"
+      },
+      "final": "未检测到杯子，已禁止出水。请放好杯子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺杯",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "no_cup",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "未检测到杯子，已禁止出水。请放好杯子后重新发令。"
+      },
+      "final": "未检测到杯子，已禁止出水。请放好杯子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺水",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "low_water",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水量不足，当前无法冲泡。请补足水后重新发令。"
+      },
+      "final": "水量不足，当前无法冲泡。请补足水后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺水",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "low_water",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水量不足，当前无法冲泡。请补足水后重新发令。"
+      },
+      "final": "水量不足，当前无法冲泡。请补足水后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺水",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "low_water",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水量不足，当前无法冲泡。请补足水后重新发令。"
+      },
+      "final": "水量不足，当前无法冲泡。请补足水后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "缺水",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "low_water",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水量不足，当前无法冲泡。请补足水后重新发令。"
+      },
+      "final": "水量不足，当前无法冲泡。请补足水后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "盖未合",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "lid_open",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "盖子未合，当前无法冲泡。请合好盖子后重新发令。"
+      },
+      "final": "盖子未合，当前无法冲泡。请合好盖子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "盖未合",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "lid_open",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "盖子未合，当前无法冲泡。请合好盖子后重新发令。"
+      },
+      "final": "盖子未合，当前无法冲泡。请合好盖子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "盖未合",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "lid_open",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "盖子未合，当前无法冲泡。请合好盖子后重新发令。"
+      },
+      "final": "盖子未合，当前无法冲泡。请合好盖子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "盖未合",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "lid_open",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "盖子未合，当前无法冲泡。请合好盖子后重新发令。"
+      },
+      "final": "盖子未合，当前无法冲泡。请合好盖子后重新发令。",
+      "passed": true
+    },
+    {
+      "state": "温控异常",
+      "model_draft": "听雨。刚才那款铁观音已经泡好，不能改浓度。后来呢？",
+      "receipt": {
+        "code": "temperature_fault",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水温异常，已禁止加热和出水。请按设备提示检查。"
+      },
+      "final": "水温异常，已禁止加热和出水。请按设备提示检查。",
+      "passed": true
+    },
+    {
+      "state": "温控异常",
+      "model_draft": "已加热。",
+      "receipt": {
+        "code": "temperature_fault",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水温异常，已禁止加热和出水。请按设备提示检查。"
+      },
+      "final": "水温异常，已禁止加热和出水。请按设备提示检查。",
+      "passed": true
+    },
+    {
+      "state": "温控异常",
+      "model_draft": "正在出水。",
+      "receipt": {
+        "code": "temperature_fault",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水温异常，已禁止加热和出水。请按设备提示检查。"
+      },
+      "final": "水温异常，已禁止加热和出水。请按设备提示检查。",
+      "passed": true
+    },
+    {
+      "state": "温控异常",
+      "model_draft": "杯里装好啦，现在能端走了。",
+      "receipt": {
+        "code": "temperature_fault",
+        "phase": "已拦截",
+        "job_id": null,
+        "text": "水温异常，已禁止加热和出水。请按设备提示检查。"
+      },
+      "final": "水温异常，已禁止加热和出水。请按设备提示检查。",
+      "passed": true
+    }
+  ]
+}

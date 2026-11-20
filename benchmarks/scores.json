@@ -1,0 +1,689 @@
+{
+  "models": [
+    "Tea-0.1-4B",
+    "Qwen3.5-4B",
+    "Qwen3.5-2B",
+    "Gemma-4-E4B",
+    "MiniCPM5-2B",
+    "Qwen3.8-27B"
+  ],
+  "metrics": [
+    "TeaMaker-Loop-34",
+    "TeaMaker-Ref-10",
+    "Hardware Safety",
+    "Tea-MCQ-60",
+    "Tea-FakeName-30",
+    "Tea-Open-10",
+    "AlignBench-Chat",
+    "Anti-AI-Speak",
+    "C-Eval",
+    "Chinese-SimpleQA",
+    "IFEval-ZH",
+    "BFCL-v3"
+  ],
+  "scores": {
+    "Tea-0.1-4B": {
+      "TeaMaker-Loop-34": {
+        "n": 34,
+        "sum": 34.0,
+        "pct": 100.0
+      },
+      "TeaMaker-Ref-10": {
+        "n": 10,
+        "sum": 10.0,
+        "pct": 100.0
+      },
+      "Hardware Safety": {
+        "n": 44,
+        "sum": 44.0,
+        "pct": 100.0
+      },
+      "Tea-MCQ-60": {
+        "n": 60,
+        "sum": 50.0,
+        "pct": 83.33333333333333
+      },
+      "Tea-FakeName-30": {
+        "n": 30,
+        "sum": 16.0,
+        "pct": 53.333333333333336
+      },
+      "Tea-Open-10": {
+        "n": 10,
+        "sum": 7.0,
+        "pct": 70.0
+      },
+      "AlignBench-Chat": {
+        "n": 38,
+        "sum": 21.35,
+        "pct": 56.18421052631579
+      },
+      "Anti-AI-Speak": {
+        "n": 48,
+        "sum": 47.0,
+        "pct": 97.91666666666667
+      },
+      "C-Eval": {
+        "n": 200,
+        "sum": 150.0,
+        "pct": 75.0
+      },
+      "Chinese-SimpleQA": {
+        "n": 200,
+        "sum": 107.0,
+        "pct": 53.5
+      },
+      "IFEval-ZH": {
+        "n": 200,
+        "sum": 128.0,
+        "pct": 64.0
+      },
+      "BFCL-v3": {
+        "n": 200,
+        "sum": 181.0,
+        "pct": 90.5
+      }
+    },
+    "Qwen3.5-4B": {
+      "TeaMaker-Loop-34": {
+        "n": 34,
+        "sum": 34.0,
+        "pct": 100.0
+      },
+      "TeaMaker-Ref-10": {
+        "n": 10,
+        "sum": 10.0,
+        "pct": 100.0
+      },
+      "Hardware Safety": {
+        "n": 44,
+        "sum": 44.0,
+        "pct": 100.0
+      },
+      "Tea-MCQ-60": {
+        "n": 60,
+        "sum": 51.0,
+        "pct": 85.0
+      },
+      "Tea-FakeName-30": {
+        "n": 30,
+        "sum": 3.0,
+        "pct": 10.0
+      },
+      "Tea-Open-10": {
+        "n": 10,
+        "sum": 2.0,
+        "pct": 20.0
+      },
+      "AlignBench-Chat": {
+        "n": 38,
+        "sum": 18.4,
+        "pct": 48.42105263157894
+      },
+      "Anti-AI-Speak": {
+        "n": 48,
+        "sum": 46.0,
+        "pct": 95.83333333333333
+      },
+      "C-Eval": {
+        "n": 200,
+        "sum": 165.0,
+        "pct": 82.5
+      },
+      "Chinese-SimpleQA": {
+        "n": 200,
+        "sum": 107.0,
+        "pct": 53.5
+      },
+      "IFEval-ZH": {
+        "n": 200,
+        "sum": 163.0,
+        "pct": 81.5
+      },
+      "BFCL-v3": {
+        "n": 200,
+        "sum": 183.0,
+        "pct": 91.5
+      }
+    },
+    "Qwen3.5-2B": {
+      "TeaMaker-Loop-34": {
+        "n": 34,
+        "sum": 29.0,
+        "pct": 85.29411764705883
+      },
+      "TeaMaker-Ref-10": {
+        "n": 10,
+        "sum": 5.0,
+        "pct": 50.0
+      },
+      "Hardware Safety": {
+        "n": 44,
+        "sum": 40.0,
+        "pct": 90.9090909090909
+      },
+      "Tea-MCQ-60": {
+        "n": 60,
+        "sum": 38.0,
+        "pct": 63.333333333333336
+      },
+      "Tea-FakeName-30": {
+        "n": 30,
+        "sum": 2.0,
+        "pct": 6.666666666666667
+      },
+      "Tea-Open-10": {
+        "n": 10,
+        "sum": 1.0,
+        "pct": 10.0
+      },
+      "AlignBench-Chat": {
+        "n": 38,
+        "sum": 14.350000000000003,
+        "pct": 37.76315789473685
+      },
+      "Anti-AI-Speak": {
+        "n": 48,
+        "sum": 43.0,
+        "pct": 89.58333333333333
+      },
+      "C-Eval": {
+        "n": 200,
+        "sum": 129.0,
+        "pct": 64.5
+      },
+      "Chinese-SimpleQA": {
+        "n": 200,
+        "sum": 56.0,
+        "pct": 28.0
+      },
+      "IFEval-ZH": {
+        "n": 200,
+        "sum": 128.0,
+        "pct": 64.0
+      },
+      "BFCL-v3": {
+        "n": 200,
+        "sum": 135.0,
+        "pct": 67.5
+      }
+    },
+    "Gemma-4-E4B": {
+      "TeaMaker-Loop-34": {
+        "n": 34,
+        "sum": 32.0,
+        "pct": 94.11764705882354
+      },
+      "TeaMaker-Ref-10": {
+        "n": 10,
+        "sum": 9.0,
+        "pct": 90.0
+      },
+      "Hardware Safety": {
+        "n": 44,
+        "sum": 44.0,
+        "pct": 100.0
+      },
+      "Tea-MCQ-60": {
+        "n": 60,
+        "sum": 44.0,
+        "pct": 73.33333333333333
+      },
+      "Tea-FakeName-30": {
+        "n": 30,
+        "sum": 9.0,
+        "pct": 30.0
+      },
+      "Tea-Open-10": {
+        "n": 10,
+        "sum": 6.0,
+        "pct": 60.0
+      },
+      "AlignBench-Chat": {
+        "n": 38,
+        "sum": 22.699999999999996,
+        "pct": 59.73684210526314
+      },
+      "Anti-AI-Speak": {
+        "n": 48,
+        "sum": 41.0,
+        "pct": 85.41666666666667
+      },
+      "C-Eval": {
+        "n": 200,
+        "sum": 136.0,
+        "pct": 68.0
+      },
+      "Chinese-SimpleQA": {
+        "n": 200,
+        "sum": 29.0,
+        "pct": 14.5
+      },
+      "IFEval-ZH": {
+        "n": 200,
+        "sum": 170.0,
+        "pct": 85.0
+      },
+      "BFCL-v3": {
+        "n": 200,
+        "sum": 176.0,
+        "pct": 88.0
+      }
+    },
+    "MiniCPM5-2B": {
+      "TeaMaker-Loop-34": {
+        "n": 34,
+        "sum": 31.0,
+        "pct": 91.17647058823529
+      },
+      "TeaMaker-Ref-10": {
+        "n": 10,
+        "sum": 10.0,
+        "pct": 100.0
+      },
+      "Hardware Safety": {
+        "n": 44,
+        "sum": 44.0,
+        "pct": 100.0
+      },
+      "Tea-MCQ-60": {
+        "n": 60,
+        "sum": 45.0,
+        "pct": 75.0
+      },
+      "Tea-FakeName-30": {
+        "n": 30,
+        "sum": 1.0,
+        "pct": 3.3333333333333335
+      },
+      "Tea-Open-10": {
+        "n": 10,
+        "sum": 1.0,
+        "pct": 10.0
+      },
+      "AlignBench-Chat": {
+        "n": 38,
+        "sum": 15.45,
+        "pct": 40.6578947368421
+      },
+      "Anti-AI-Speak": {
+        "n": 48,
+        "sum": 47.0,
+        "pct": 97.91666666666667
+      },
+      "C-Eval": {
+        "n": 200,
+        "sum": 151.0,
+        "pct": 75.5
+      },
+      "Chinese-SimpleQA": {
+        "n": 200,
+        "sum": 31.0,
+        "pct": 15.5
+      },
+      "IFEval-ZH": {
+        "n": 200,
+        "sum": 161.0,
+        "pct": 80.5
+      },
+      "BFCL-v3": {
+        "n": 200,
+        "sum": 142.0,
+        "pct": 71.0
+      }
+    },
+    "Qwen3.8-27B": {
+      "TeaMaker-Loop-34": {
+        "n": 34,
+        "sum": 34.0,
+        "pct": 100.0
+      },
+      "TeaMaker-Ref-10": {
+        "n": 10,
+        "sum": 10.0,
+        "pct": 100.0
+      },
+      "Hardware Safety": {
+        "n": 44,
+        "sum": 44.0,
+        "pct": 100.0
+      },
+      "Tea-MCQ-60": {
+        "n": 60,
+        "sum": 59.0,
+        "pct": 98.33333333333333
+      },
+      "Tea-FakeName-30": {
+        "n": 30,
+        "sum": 11.0,
+        "pct": 36.666666666666664
+      },
+      "Tea-Open-10": {
+        "n": 10,
+        "sum": 6.0,
+        "pct": 60.0
+      },
+      "AlignBench-Chat": {
+        "n": 38,
+        "sum": 23.4,
+        "pct": 61.578947368421055
+      },
+      "Anti-AI-Speak": {
+        "n": 48,
+        "sum": 42.0,
+        "pct": 87.5
+      },
+      "C-Eval": {
+        "n": 200,
+        "sum": 174.0,
+        "pct": 87.0
+      },
+      "Chinese-SimpleQA": {
+        "n": 200,
+        "sum": 104.0,
+        "pct": 52.0
+      },
+      "IFEval-ZH": {
+        "n": 200,
+        "sum": 175.0,
+        "pct": 87.5
+      },
+      "BFCL-v3": {
+        "n": 200,
+        "sum": 186.0,
+        "pct": 93.0
+      }
+    }
+  },
+  "diagnostics": {
+    "Tea-0.1-4B": {
+      "device_errors": {
+        "误播": 0,
+        "漏启动": 0,
+        "误启动": 0,
+        "指错茶": 0
+      },
+      "thinking_residual_ids": [],
+      "truncated_ids": [
+        "AlignBench-Chat/673",
+        "IFEval-ZH/1823",
+        "IFEval-ZH/2585",
+        "IFEval-ZH/2323",
+        "IFEval-ZH/1265",
+        "IFEval-ZH/1619",
+        "IFEval-ZH/30",
+        "IFEval-ZH/3415",
+        "IFEval-ZH/2303"
+      ],
+      "simpleqa_not_attempted_count": 0
+    },
+    "Qwen3.5-4B": {
+      "device_errors": {
+        "误播": 0,
+        "漏启动": 0,
+        "误启动": 0,
+        "指错茶": 0
+      },
+      "thinking_residual_ids": [
+        "IFEval-ZH/2273"
+      ],
+      "truncated_ids": [
+        "TF01",
+        "TF03",
+        "TF04",
+        "TF05",
+        "TF06",
+        "TF07",
+        "TF08",
+        "TF09",
+        "TF10",
+        "TF11",
+        "TF12",
+        "TF13",
+        "TF14",
+        "TF15",
+        "TF17",
+        "TF18",
+        "TF19",
+        "TF20",
+        "TF21",
+        "TF22",
+        "TF23",
+        "TF24",
+        "TF25",
+        "TF26",
+        "TF27",
+        "TF28",
+        "TF29",
+        "TF30",
+        "IFEval-ZH/2273",
+        "IFEval-ZH/2299",
+        "Chinese-SimpleQA/96a276449e954dec99d4d562cb8b15a3",
+        "Chinese-SimpleQA/18871925d4e849e9bf1b4b1c8d50cc46",
+        "Chinese-SimpleQA/2d8e218940ca487d93f9c4629d0b2426"
+      ],
+      "simpleqa_not_attempted_count": 1
+    },
+    "Qwen3.5-2B": {
+      "device_errors": {
+        "误播": 0,
+        "漏启动": 4,
+        "误启动": 0,
+        "指错茶": 0
+      },
+      "thinking_residual_ids": [],
+      "truncated_ids": [
+        "TF01",
+        "TF03",
+        "TF04",
+        "TF05",
+        "TF06",
+        "TF07",
+        "TF08",
+        "TF09",
+        "TF10",
+        "TF11",
+        "TF12",
+        "TF13",
+        "TF14",
+        "TF15",
+        "TF16",
+        "TF17",
+        "TF18",
+        "TF19",
+        "TF20",
+        "TF21",
+        "TF22",
+        "TF23",
+        "TF24",
+        "TF25",
+        "TF26",
+        "TF27",
+        "TF28",
+        "TF29",
+        "TF30",
+        "AlignBench-Chat/662",
+        "C-Eval/advanced_mathematics/3",
+        "IFEval-ZH/1879",
+        "IFEval-ZH/3505",
+        "IFEval-ZH/1823",
+        "IFEval-ZH/168",
+        "IFEval-ZH/337",
+        "IFEval-ZH/2324",
+        "IFEval-ZH/2245",
+        "IFEval-ZH/3114",
+        "IFEval-ZH/3567",
+        "IFEval-ZH/2299",
+        "IFEval-ZH/3335",
+        "IFEval-ZH/3327",
+        "IFEval-ZH/1738",
+        "IFEval-ZH/3502",
+        "IFEval-ZH/2596",
+        "IFEval-ZH/2471",
+        "IFEval-ZH/1001",
+        "IFEval-ZH/2739",
+        "IFEval-ZH/1154",
+        "IFEval-ZH/3691",
+        "IFEval-ZH/3287"
+      ],
+      "simpleqa_not_attempted_count": 1
+    },
+    "Gemma-4-E4B": {
+      "device_errors": {
+        "误播": 0,
+        "漏启动": 0,
+        "误启动": 0,
+        "指错茶": 0
+      },
+      "thinking_residual_ids": [],
+      "truncated_ids": [
+        "TF01",
+        "TF03",
+        "TF04",
+        "TF05",
+        "TF06",
+        "TF07",
+        "TF08",
+        "TF09",
+        "TF11",
+        "TF12",
+        "TF13",
+        "TF14",
+        "TF15",
+        "TF17",
+        "TF18",
+        "TF19",
+        "TF20",
+        "TF21",
+        "TF22",
+        "TF23",
+        "TF24",
+        "TF25",
+        "TF26",
+        "TF27",
+        "TF28",
+        "TF29",
+        "TF30",
+        "AlignBench-Chat/667"
+      ],
+      "simpleqa_not_attempted_count": 108
+    },
+    "MiniCPM5-2B": {
+      "device_errors": {
+        "误播": 0,
+        "漏启动": 0,
+        "误启动": 0,
+        "指错茶": 0
+      },
+      "thinking_residual_ids": [
+        "TF13",
+        "C-Eval/high_school_chemistry/8",
+        "C-Eval/tax_accountant/41",
+        "C-Eval/high_school_mathematics/8",
+        "C-Eval/plant_protection/17",
+        "C-Eval/legal_professional/5",
+        "C-Eval/discrete_mathematics/11",
+        "C-Eval/professional_tour_guide/5"
+      ],
+      "truncated_ids": [
+        "TF03",
+        "TF08",
+        "TF09",
+        "TF12",
+        "TF13",
+        "TF14",
+        "TF15",
+        "TF21",
+        "TF23",
+        "TF27",
+        "TF30",
+        "C-Eval/tax_accountant/42",
+        "IFEval-ZH/1879",
+        "IFEval-ZH/3429",
+        "IFEval-ZH/337",
+        "IFEval-ZH/1591",
+        "IFEval-ZH/1069",
+        "IFEval-ZH/3615",
+        "IFEval-ZH/3287",
+        "IFEval-ZH/3425"
+      ],
+      "simpleqa_not_attempted_count": 10
+    },
+    "Qwen3.8-27B": {
+      "device_errors": {
+        "误播": 0,
+        "漏启动": 0,
+        "误启动": 0,
+        "指错茶": 0
+      },
+      "thinking_residual_ids": [],
+      "truncated_ids": [
+        "TF01",
+        "TF02",
+        "TF03",
+        "TF05",
+        "TF06",
+        "TF07",
+        "TF08",
+        "TF09",
+        "TF11",
+        "TF12",
+        "TF13",
+        "TF14",
+        "TF15",
+        "TF17",
+        "TF18",
+        "TF19",
+        "TF20",
+        "TF21",
+        "TF22",
+        "TF23",
+        "TF24",
+        "TF25",
+        "TF26",
+        "TF27",
+        "TF28",
+        "TF29",
+        "TF30",
+        "AlignBench-Chat/678"
+      ],
+      "simpleqa_not_attempted_count": 2
+    }
+  },
+  "judging": {
+    "AlignBench-Chat": {
+      "ratings": 228,
+      "exact": 185,
+      "within_one_or_binary_agree": 228,
+      "arbitrated": 0
+    },
+    "Tea-FakeName-30": {
+      "ratings": 180,
+      "exact": 175,
+      "within_one_or_binary_agree": 175,
+      "arbitrated": 5
+    },
+    "Tea-Open-10": {
+      "ratings": 60,
+      "exact": 58,
+      "within_one_or_binary_agree": 58,
+      "arbitrated": 2
+    },
+    "total": {
+      "ratings": 1668,
+      "exact": 1601,
+      "arbitrated": 24,
+      "within_one_or_binary_agree": 1644
+    },
+    "Chinese-SimpleQA": {
+      "ratings": 1200,
+      "exact": 1183,
+      "arbitrated": 17,
+      "within_one_or_binary_agree": 1183
+    }
+  },
+  "revision": "v3",
+  "changed_metrics": [
+    "Chinese-SimpleQA"
+  ]
+}

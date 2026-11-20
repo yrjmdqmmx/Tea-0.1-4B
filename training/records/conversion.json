@@ -1,0 +1,22 @@
+{
+  "tag": "b12532",
+  "commit": "08c252e221759e0f69e80f0450b295c92d2344e1",
+  "method": "b12532 官方 TEXT + --no-mtp；仅禁用 Qwen3_5TextModel 的两组共享输入投影拼接，保留分开的 beta/alpha、QKV/gate 张量名，两档从同一 bf16 GGUF 独立量化。",
+  "text_only": true,
+  "quant": {
+    "Q8_0": {
+      "bytes": 4482402816,
+      "sha256": "15735c5ddcf019338cf9ff78bd28fc313524a9290b6b09e335eda1e5b7f1bc59",
+      "tensors": 426,
+      "architecture": "qwen35",
+      "file_type": 7
+    },
+    "Q4_K_M": {
+      "bytes": 2708804096,
+      "sha256": "e6cc47e25fe813e296872937b57c4f679cdb0fd11beb5a1e29871b429fff3b67",
+      "tensors": 426,
+      "architecture": "qwen35",
+      "file_type": 15
+    }
+  }
+}

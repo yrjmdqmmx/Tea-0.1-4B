@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "device-S01",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "凤凰单丛听起来不错。",
+        "codes": [
+          "chat",
+          "menu",
+          "capability"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "边聊边泡",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "chat",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S02",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "就这个，给我泡杯淡的，现在开始吧。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "淡",
+        "should_start": true,
+        "scene": "边聊边泡",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "start",
+          "tea": "凤凰单丛",
+          "strength": "淡"
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S03",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "等茶的时候陪我聊两句，单丛这个名字挺有意思的。",
+        "codes": [
+          "chat",
+          "menu",
+          "capability"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "淡",
+        "should_start": false,
+        "scene": "边聊边泡",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "chat",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S04",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "我的茶现在到哪一步了？",
+        "codes": [
+          "status"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "淡",
+        "should_start": false,
+        "scene": "边聊边泡",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "status",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S05",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "等等，先别出水，停一下。",
+        "codes": [
+          "stopped"
+        ],
+        "phase": "已停止",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "边聊边泡",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "stop",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S06",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "现在还在泡吗？",
+        "codes": [
+          "status"
+        ],
+        "phase": "已停止",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "边聊边泡",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "status",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S07",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "同事老说‘给我泡杯铁观音’，我只是在学他说话。",
+        "codes": [
+          "chat",
+          "menu",
+          "capability"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "转述与假设",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "chat",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S08",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "假如我一会儿想喝淡点的凤凰单丛，你能泡吗？先不用做。",
+        "codes": [
+          "chat",
+          "menu",
+          "capability"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "转述与假设",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "chat",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S09",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "给我泡杯淡的。",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "缺茶种再补充",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "clarify",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S10",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "凤凰单丛，现在泡吧。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "淡",
+        "should_start": true,
+        "scene": "缺茶种再补充",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "start",
+          "tea": "凤凰单丛",
+          "strength": "淡"
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S11",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "来杯铁观音……算了，先不泡了，就聊会儿。",
+        "codes": [
+          "chat",
+          "menu",
+          "capability"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "否定后改口",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "chat",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S12",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "现在给我泡杯铁观音。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "铁观音",
+        "strength": "标准",
+        "should_start": true,
+        "scene": "默认浓度与重复启动",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "start",
+          "tea": "铁观音",
+          "strength": "标准"
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S13",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "再开一杯淡的凤凰单丛，马上开始。",
+        "codes": [
+          "busy"
+        ],
+        "phase": "加热中",
+        "tea": "铁观音",
+        "strength": "标准",
+        "should_start": false,
+        "scene": "默认浓度与重复启动",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "start",
+          "tea": "凤凰单丛",
+          "strength": "淡"
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S14",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "给我泡杯铁观音，现在开始。",
+        "codes": [
+          "no_cup"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "启动时取走杯子",
+        "event": "取走杯子",
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "start",
+          "tea": "铁观音",
+          "strength": "标准"
+        },
+        "allow_blocked": true
+      }
+    ]
+  },
+  {
+    "id": "device-S15",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "给我泡杯淡的凤凰单丛，现在开始。",
+        "codes": [
+          "low_water"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "启动时缺水",
+        "event": "水量不足",
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "start",
+          "tea": "凤凰单丛",
+          "strength": "淡"
+        },
+        "allow_blocked": true
+      }
+    ]
+  },
+  {
+    "id": "device-S16",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "快停，别再往杯里倒了！",
+        "codes": [
+          "stopped"
+        ],
+        "phase": "已停止",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "出水中独立叫停",
+        "event": null,
+        "initial": {
+          "阶段": "出水中",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": "凤凰单丛",
+          "当前浓度": "淡"
+        },
+        "action": {
+          "action": "stop",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-S17",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "现在是什么状态？",
+        "codes": [
+          "no_cup"
+        ],
+        "phase": "已停止",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "出水中传感器联锁",
+        "event": "取走杯子",
+        "initial": {
+          "阶段": "出水中",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": "凤凰单丛",
+          "当前浓度": "淡"
+        },
+        "action": {
+          "action": "status",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": true
+      }
+    ]
+  },
+  {
+    "id": "device-S18",
+    "group": "simulation",
+    "turns": [
+      {
+        "user": "现在帮我泡杯龙井。",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "scene": "支持范围之外",
+        "event": null,
+        "initial": {
+          "阶段": "空闲",
+          "杯子在位": true,
+          "水量足够": true,
+          "当前茶种": null,
+          "当前浓度": null
+        },
+        "action": {
+          "action": "clarify",
+          "tea": null,
+          "strength": null
+        },
+        "allow_blocked": false
+      }
+    ]
+  },
+  {
+    "id": "device-D1-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我选凤凰单丛。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D1-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "就这个，现在开泡。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "标准",
+        "should_start": true
+      }
+    ],
+    "first_id": "device-D1-1"
+  },
+  {
+    "id": "device-D2-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我选铁观音。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D2-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "就这个，现在开泡。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "铁观音",
+        "strength": "标准",
+        "should_start": true
+      }
+    ],
+    "first_id": "device-D2-1"
+  },
+  {
+    "id": "device-D3-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我还在铁观音和凤凰单丛之间纠结。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D3-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "就这个，现在开泡。",
+        "codes": [
+          "choose_tea"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ],
+    "first_id": "device-D3-1"
+  },
+  {
+    "id": "device-D4-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "上一位客人喝的是铁观音，我自己还没点。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D4-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "就这个，现在开泡。",
+        "codes": [
+          "choose_tea"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ],
+    "first_id": "device-D4-1"
+  },
+  {
+    "id": "device-D5-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "同桌要喝热饮，我也把杯子放好了。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D5-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "给我弄一杯呀，淡点就行，茶种我还没决定。",
+        "codes": [
+          "choose_tea"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ],
+    "first_id": "device-D5-1"
+  },
+  {
+    "id": "device-D6-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我选凤凰单丛。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D6-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "等下，我改要白鸡冠，其他茶都别给我做。",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ],
+    "first_id": "device-D6-1"
+  },
+  {
+    "id": "device-D7-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我带了个新茶包，正看你的菜单。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D7-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我只想用自己带的蒙顶黄芽，能替我执行冲泡吗？",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ],
+    "first_id": "device-D7-1"
+  },
+  {
+    "id": "device-D8-1",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "我选铁观音。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ]
+  },
+  {
+    "id": "device-D8-2",
+    "group": "pairs",
+    "turns": [
+      {
+        "user": "先不启动啦，到点我再叫你。",
+        "codes": [
+          "chat",
+          "status",
+          "selected",
+          "choose_tea"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      }
+    ],
+    "first_id": "device-D8-1"
+  },
+  {
+    "id": "device-P1",
+    "group": "heldout",
+    "fixed_history_reply": "你选的是凤凰单丛，还没开。",
+    "turns": [
+      {
+        "user": "我给自己圈下凤凰单丛，茶单先收起来。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "圈的那样现在下一杯。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "标准",
+        "should_start": true,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P2",
+    "group": "heldout",
+    "fixed_history_reply": "你选的是铁观音，还没开。",
+    "turns": [
+      {
+        "user": "我给自己圈下铁观音，茶单先收起来。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "圈的那样现在下一杯。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "铁观音",
+        "strength": "标准",
+        "should_start": true,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P3",
+    "group": "heldout",
+    "fixed_history_reply": "两款里你登记的是凤凰单丛。",
+    "turns": [
+      {
+        "user": "刚登记的是凤凰单丛，另外一款是铁观音。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "划掉刚登记的，做剩下那样，清淡档。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "铁观音",
+        "strength": "淡",
+        "should_start": true,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P4",
+    "group": "heldout",
+    "fixed_history_reply": "两款里你登记的是铁观音。",
+    "turns": [
+      {
+        "user": "刚登记的是铁观音，另外一款是凤凰单丛。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "划掉刚登记的，做剩下那样，清淡档。",
+        "codes": [
+          "started"
+        ],
+        "phase": "加热中",
+        "tea": "凤凰单丛",
+        "strength": "淡",
+        "should_start": true,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P5",
+    "group": "heldout",
+    "fixed_history_reply": "那就先不选。",
+    "turns": [
+      {
+        "user": "你报了铁观音和凤凰单丛，两款我还在犹豫。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "帮我出一杯，不浓，名字一会再补。",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P6",
+    "group": "heldout",
+    "fixed_history_reply": "到你了，重新选。",
+    "turns": [
+      {
+        "user": "我姐上一位选铁观音，我换自己的杯子。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "我这杯按刚才那个开？其实还没点过。",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P7",
+    "group": "heldout",
+    "fixed_history_reply": "你的要求是什么？",
+    "turns": [
+      {
+        "user": "我有一包顾渚紫笋跟我出差。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "只认我这包顾渚紫笋，办不到就结束，不用劝我别的。",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P8",
+    "group": "heldout",
+    "fixed_history_reply": "你想用哪种？",
+    "turns": [
+      {
+        "user": "同伴想试本机菜单，我还是自带。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "我就用自己带的涌溪火青，不换别的，还能开机做吗？",
+        "codes": [
+          "choose_tea",
+          "unsupported",
+          "no_substitution"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P9",
+    "group": "heldout",
+    "fixed_history_reply": "凤凰单丛暂时只登记。",
+    "turns": [
+      {
+        "user": "今天先选凤凰单丛，但我还没打算喝。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "暂存这个，手别动，咱们先说午餐。",
+        "codes": [
+          "selected",
+          "chat",
+          "status"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "must_say": null
+      }
+    ]
+  },
+  {
+    "id": "device-P10",
+    "group": "heldout",
+    "fixed_history_reply": "铁观音已经记下，机器空闲。",
+    "turns": [
+      {
+        "user": "我选铁观音。",
+        "codes": null,
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false
+      },
+      {
+        "user": "刚才那款可不可以调淡？我只问可不可以。",
+        "codes": [
+          "capability"
+        ],
+        "phase": "空闲",
+        "tea": null,
+        "strength": null,
+        "should_start": false,
+        "must_say": "支持淡档"
+      }
+    ]
+  }
+]

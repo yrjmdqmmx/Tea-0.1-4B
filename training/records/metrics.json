@@ -1,0 +1,28 @@
+{
+  "fixed18": 18,
+  "pairs8": 8,
+  "turns": 34,
+  "error_counts": {
+    "误播": 0,
+    "漏启动": 0,
+    "误启动": 0,
+    "指错茶": 0
+  },
+  "issues": {
+    "误播": [],
+    "漏启动": [],
+    "误启动": [],
+    "指错茶": []
+  },
+  "blocked_progress_sentences": 0,
+  "heldout10": 10,
+  "controller_sha256": "3f19d12dfd288343cbb54f61801c1990351a0e6af3d60b743c0294e3d8885725",
+  "mode": "l4",
+  "inference_calls": 64,
+  "model": "qwen35-4b-tea-v5-Q8_0.gguf",
+  "seed": 21928,
+  "temperature": 0,
+  "top_k": 1,
+  "context": 4096,
+  "thinking": false
+}

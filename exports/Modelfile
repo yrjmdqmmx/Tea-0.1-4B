@@ -1,0 +1,17 @@
+FROM ./gguf/qwen35-4b-tea-v5-Q8_0.gguf
+TEMPLATE """{{range .Messages}}<|im_start|>{{.Role}}
+{{.Content}}<|im_end|>
+{{end}}<|im_start|>assistant
+<think>
+
+</think>
+
+{{.Response}}"""
+PARAMETER temperature 0
+PARAMETER top_k 1
+PARAMETER repeat_penalty 1
+PARAMETER seed 21928
+PARAMETER num_ctx 4096
+PARAMETER num_predict 192
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|endoftext|>"

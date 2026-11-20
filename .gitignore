@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+.cache/
+.venv*/
+runs/
+logs/
+*.gguf
+*.part0?
+/benchmarks/suites/public/
+!/benchmarks/preflight/device_sources/logs/

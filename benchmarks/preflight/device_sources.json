@@ -1,0 +1,8 @@
+{
+  "logs/step5a/heldwire5.py": "9bda5e02ac8b1d75a79eddc5685e59d929beaf2d646f933c39382813b3991abd",
+  "checkpoints/tea_r5_dpo_v11/dpo_closed_loop.py": "b00af3109f44a0480c63cb50d23565faa22f44c7cd089c824aa6fbe149c61ce7",
+  "checkpoints/tea_lora_r5_final_20261119/tea_lora_r5_old_probes.py": "5f3a55edb1a7afbbeda7fe5eb08cd51378cbcea5d562b388adefee0014297628",
+  "eval/tea_sim_eval_v1.py": "3748387842f5d06e73cf18a05753a8e8ba25da7233bb8ab273b3c08c861d520b",
+  "exports/controller/tea_controller.py": "3f19d12dfd288343cbb54f61801c1990351a0e6af3d60b743c0294e3d8885725",
+  "data/tea_chat_sft_r5/盲测题.json": "7db2932db9d693851f08f3aac97088ea1ed41ffb38fa531a6a342ecf9096b3a3"
+}

@@ -1,0 +1,118 @@
+{
+  "candidates": [
+    {
+      "alpha": 32,
+      "language12": 2.856361366919617,
+      "old20": 2.7006569685671007,
+      "action_dev_nll": 0.033335804103750276,
+      "action_hits": 10,
+      "criterion": 0.609582759929513,
+      "answers": [
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"凤凰单丛\", \"strength\": \"淡\"}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"标准\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}"
+      ]
+    },
+    {
+      "alpha": 24,
+      "language12": 2.989769460549995,
+      "old20": 2.7157397777681807,
+      "action_dev_nll": 0.021990969094700722,
+      "action_hits": 10,
+      "criterion": 0.606602611253059,
+      "answers": [
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"凤凰单丛\", \"strength\": \"淡\"}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"标准\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}"
+      ]
+    },
+    {
+      "alpha": 28,
+      "language12": 2.9068319361601302,
+      "old20": 2.6937897177363124,
+      "action_dev_nll": 0.02645781437483733,
+      "action_hits": 10,
+      "criterion": 0.6039037002761205,
+      "answers": [
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"凤凰单丛\", \"strength\": \"淡\"}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"标准\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}"
+      ]
+    },
+    {
+      "alpha": 36,
+      "language12": 2.8483977206607363,
+      "old20": 2.728566942200038,
+      "action_dev_nll": 0.042497492585311596,
+      "action_hits": 10,
+      "criterion": 0.6226835192994877,
+      "answers": [
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"凤凰单丛\", \"strength\": \"淡\"}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"标准\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+        "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+        "{\"action\": \"chat\", \"tea\": null, \"strength\": null}"
+      ]
+    }
+  ],
+  "selected": {
+    "alpha": 28,
+    "language12": 2.9068319361601302,
+    "old20": 2.6937897177363124,
+    "action_dev_nll": 0.02645781437483733,
+    "action_hits": 10,
+    "criterion": 0.6039037002761205,
+    "answers": [
+      "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+      "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"clarify\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"start\", \"tea\": \"凤凰单丛\", \"strength\": \"淡\"}",
+      "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"标准\"}",
+      "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"chat\", \"tea\": null, \"strength\": null}",
+      "{\"action\": \"start\", \"tea\": \"铁观音\", \"strength\": \"淡\"}",
+      "{\"action\": \"chat\", \"tea\": null, \"strength\": null}"
+    ]
+  },
+  "adapter_config_sha256": "1510a2bfe5b4771fee664d568e50da536f5b5c79290c5db8770be388b51cb292",
+  "pretrained_rank": 16,
+  "training_alpha": 32,
+  "weights_sha256": "ba2869fc3361224c24944dbade82d96717e937feb5480d9bd5010723c860b454"
+}

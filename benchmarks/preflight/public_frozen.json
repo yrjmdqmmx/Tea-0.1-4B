@@ -1,0 +1,51 @@
+{
+  "AlignBench-Chat": {
+    "n": 38,
+    "sha256": "123ce18ae410eac884ec62dd1b2f2df79f8014be09a9c0b90386c77ced55db17",
+    "seed": 42,
+    "categories": {
+      "综合问答": 38
+    }
+  },
+  "C-Eval": {
+    "n": 200,
+    "sha256": "cd9d8ba74e2d21106f95040ada058029c1dfc2a3d258df51cb814eaa82ea07fc",
+    "seed": 42,
+    "categories": {
+      "Social Science": 41,
+      "STEM": 65,
+      "Humanities": 37,
+      "Other": 57
+    }
+  },
+  "Chinese-SimpleQA": {
+    "n": 200,
+    "sha256": "5182dcf822ad75490d471544bdf1892ce5286e32e09d6bfc1e4cf00c678c12be",
+    "seed": 42,
+    "categories": {
+      "生活、艺术与文化": 38,
+      "社会": 34,
+      "人文与社会科学": 46,
+      "自然与自然科学": 26,
+      "工程、技术与应用科学": 29,
+      "中华文化": 27
+    }
+  },
+  "IFEval-ZH": {
+    "n": 200,
+    "sha256": "8c959ab886c61d0526b931678664b15dd83294e315a31a55242d799aa35348b8",
+    "seed": 42,
+    "categories": {
+      "IFEval-ZH": 200
+    }
+  },
+  "BFCL-v3": {
+    "n": 200,
+    "sha256": "e6177cf80e4b5cb5ba3752f4e108535352d642b7c2b2552d9a0bfe6d6573ca96",
+    "seed": 42,
+    "categories": {
+      "multiple": 100,
+      "simple": 100
+    }
+  }
+}

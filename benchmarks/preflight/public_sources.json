@@ -1,0 +1,421 @@
+{
+  "evalscope": {
+    "release": "1.15.0",
+    "wheel_sha256": "e2dfb2bc453cc52169e7dfd5c3d47575b2b50b3c9657ff5d4259f770cf79d9c1",
+    "source": "https://pypi.org/project/evalscope/1.15.0/"
+  },
+  "ifeval_checker": {
+    "repo": "https://github.com/CONE-MT/BenchMAX/tree/03cfd656c1b0b93647b5dabf5a11ce9be362493c/tasks/ifeval",
+    "revision": "03cfd656c1b0b93647b5dabf5a11ce9be362493c",
+    "changes": "包内相对导入，移除路径输出、自动下载和包含模型文本的日志，保留上游打分。",
+    "nltk_english_sha256": {
+      "abbrev_types.txt": "92a3e070f43d9b4c5534758ca40ad7343b04e7e29bfe0c2eb658a39445a4f779",
+      "collocations.tab": "8e2da1225e4dd2cc9dba261ee231ccb134859e21b46006e7f472c5ee269af0cf",
+      "ortho_context.tab": "4bbcca25ed3d3f06c02402abf8419b9f033b8adc06e7b482eca4e45f81a5dc4c",
+      "sent_starters.txt": "f3f8535483e1dba487241b764945168123bca3209a9645e59acd1225dc76edac"
+    }
+  },
+  "datasets": {
+    "AlignBench-Chat": {
+      "repository": "THUDM/AlignBench",
+      "revision": "650591371822a1e04446af656ba3792ea3d5c2bb",
+      "source": "https://github.com/THUDM/AlignBench/tree/650591371822a1e04446af656ba3792ea3d5c2bb",
+      "license": "该提交未列数据许可证",
+      "scope": "公开商业展示题面、参考答案或再分发前另核授权。",
+      "n_source": 683,
+      "protocol": "v1.1 官方综合问答38条，寻求建议24、观点表达14；保留全量，仅 seed42 排序。后续裁判。"
+    },
+    "C-Eval": {
+      "repository": "ceval/ceval-exam",
+      "revision": "617524a00b307ff6f9933702f724131fe12ca7ce",
+      "source": "https://huggingface.co/datasets/ceval/ceval-exam/blob/617524a00b307ff6f9933702f724131fe12ca7ce/README.md",
+      "license": "CC BY-NC-SA 4.0",
+      "scope": "有非商业、署名、相同方式共享条件。商业展示题面、答案或发布派生数据需另核许可。",
+      "n_source": 1346,
+      "protocol": "官方可得标签 val；52个学科按样本规模最大余数分配，seed42；EvalScope 零样本模板和中文选择解析。"
+    },
+    "Chinese-SimpleQA": {
+      "repository": "OpenStellarTeam/Chinese-SimpleQA",
+      "revision": "336305fc5f1da8184e3f70aff4473408418383a0",
+      "source": "https://huggingface.co/datasets/OpenStellarTeam/Chinese-SimpleQA/blob/336305fc5f1da8184e3f70aff4473408418383a0/README.md",
+      "license": "CC BY-NC-SA 4.0（HF数据卡），GitHub代码仓含 MIT",
+      "scope": "数据卡有非商业、署名、相同方式共享条件。商业展示题面、答案或发布派生数据需另核许可。",
+      "n_source": 3000,
+      "protocol": "官方数据、EvalScope 原生模板。归一化完整答案与预冻结等价写法，本地匹配与拒答单报；官方采用 LLM 裁判。"
+    },
+    "IFEval-ZH": {
+      "repository": "LLaMAX/BenchMAX_Domain_Translation",
+      "revision": "dfa035491e3e50a07c1badca0d2765a4871d35ce",
+      "source": "https://huggingface.co/datasets/LLaMAX/BenchMAX_Domain_Translation/blob/dfa035491e3e50a07c1badca0d2765a4871d35ce/README.md",
+      "license": "CC BY 4.0（翻译数据卡）；BenchMAX checker 根目录 MIT，源码保留其 Apache 声明",
+      "scope": "对外复用需按数据卡及相应上游条款署名、链接许可证、标注改动。",
+      "n_source": 429,
+      "protocol": "BenchMAX 中文翻译版的 strict prompt/strict instruction 检查；非 EvalScope 英文 IFEval。"
+    },
+    "BFCL-v3": {
+      "repository": "gorilla-llm/Berkeley-Function-Calling-Leaderboard",
+      "revision": "61fc0608cfd831fcfbbaa676ebdfef0ed963eeda",
+      "source": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/blob/61fc0608cfd831fcfbbaa676ebdfef0ed963eeda/README.md",
+      "license": "Apache 2.0（数据卡）",
+      "scope": "复用需要保留许可、署名及按要求标注改动。",
+      "n_source": 600,
+      "protocol": "英文单轮 simple 400 和 multiple 200 内各抽100；Python文本调用，使用 EvalScope 依赖固定的 BFCL AST checker。"
+    }
+  },
+  "inputs": [
+    {
+      "suite": "AlignBench-Chat",
+      "path": "align/data/data_v1.1_release.jsonl",
+      "url": "https://raw.githubusercontent.com/THUDM/AlignBench/650591371822a1e04446af656ba3792ea3d5c2bb/data/data_v1.1_release.jsonl",
+      "sha256": "6ad5cdb2d552d2557aca18d0dcabaf19ff59fd18bef98eef880296c0478bbd11"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/accountant/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/accountant/val-00000-of-00001.parquet",
+      "sha256": "f99296e281ce47302c8fe49d5d1b3dc870677a0d926a7bef8bcbbfcee16128bd"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/advanced_mathematics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/advanced_mathematics/val-00000-of-00001.parquet",
+      "sha256": "e05ed87c1ea558e378838ec9c33ec6aba139a65546001d61d8822cfd3df7c819"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/art_studies/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/art_studies/val-00000-of-00001.parquet",
+      "sha256": "8d7f0e954f19a586d05c47ef6a3fe1c5851090e3db834e3c8f693b6483b0f5aa"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/basic_medicine/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/basic_medicine/val-00000-of-00001.parquet",
+      "sha256": "41395a18f51c704a7233046aca1961a999f784f05576de180bea58a5b2abbec0"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/business_administration/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/business_administration/val-00000-of-00001.parquet",
+      "sha256": "b897dc81b061d1468900b9b38f9d697e291bda5d7f5b33d5de2db12e59afc4bc"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/chinese_language_and_literature/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/chinese_language_and_literature/val-00000-of-00001.parquet",
+      "sha256": "50f20440e7a7893303db46c7eb0ec3612e3ea85d0cf841cfbdd5e9898f861c9c"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/civil_servant/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/civil_servant/val-00000-of-00001.parquet",
+      "sha256": "7018958b189d8018836d990b139b5bc30d778ce572091f4f213ab0b7f9053e59"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/clinical_medicine/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/clinical_medicine/val-00000-of-00001.parquet",
+      "sha256": "c8d691d83dc21f5e4de2356dcbef544dec7196c43af164e4d2b497c4eae15bb6"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/college_chemistry/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/college_chemistry/val-00000-of-00001.parquet",
+      "sha256": "7da3751d4784480a07b91bd9433440f109b04951884449a0fc4ab8b7a7f378d7"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/college_economics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/college_economics/val-00000-of-00001.parquet",
+      "sha256": "de20bf0e060430f0f1c98e0e0040735abeb2fbaaacd3f2d54a7b137ebf244079"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/college_physics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/college_physics/val-00000-of-00001.parquet",
+      "sha256": "0e81a35b2dfa7e344d3eb666cd1308990c838c181f708030fd77f9dd81ef8a83"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/college_programming/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/college_programming/val-00000-of-00001.parquet",
+      "sha256": "23705408d1e4733ce877217c64a5e6ba21b0a8f65347ff64f1f6c7654b446377"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/computer_architecture/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/computer_architecture/val-00000-of-00001.parquet",
+      "sha256": "c1c5fab4950b04a91e1f9e0f024eae1f414e33dc47a4c02ec52650d1d319ae06"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/computer_network/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/computer_network/val-00000-of-00001.parquet",
+      "sha256": "f7dd2a0760c9ef14e569d6bde56f283a701ad61934e900e0b72fd29e32fd0f02"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/discrete_mathematics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/discrete_mathematics/val-00000-of-00001.parquet",
+      "sha256": "7e04bdff838a745ff7118e47070ddca409fea61fe130672577945656dd9e2903"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/education_science/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/education_science/val-00000-of-00001.parquet",
+      "sha256": "6f3a48fc3b60c03e44b2f32b1fdb214967e5112de3ba3631c9e3df24d1e77fe6"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/electrical_engineer/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/electrical_engineer/val-00000-of-00001.parquet",
+      "sha256": "cbcca6c3a508836b21ead049b8342a380a1480f768acc6e3139873d8bccb335c"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/environmental_impact_assessment_engineer/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/environmental_impact_assessment_engineer/val-00000-of-00001.parquet",
+      "sha256": "73aac8698483ded8535dce22ab102081b8fa51f58442035edf46bf515518eed4"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/fire_engineer/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/fire_engineer/val-00000-of-00001.parquet",
+      "sha256": "a9378038b664757a83bd14355773e9849edc1e4a8030246e3e8aeeaf62a3cc18"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_biology/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_biology/val-00000-of-00001.parquet",
+      "sha256": "2177aa275ad4a2f972ddfd6aa318323c15fb136608200daa237f17528a37ecdd"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_chemistry/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_chemistry/val-00000-of-00001.parquet",
+      "sha256": "60d20961edd3318e1cb09df44e10e0101b6ec6c97332299f030b11fc48bb1953"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_chinese/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_chinese/val-00000-of-00001.parquet",
+      "sha256": "1b3cb0cbba7393c1a3f555dad8205899fb991bca7e4c3adb123423ae6d6069b1"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_geography/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_geography/val-00000-of-00001.parquet",
+      "sha256": "4bad8dbc69442c2e2c57cabfc0d87e9c9b68f1271d5826787af678a5eeeedd85"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_history/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_history/val-00000-of-00001.parquet",
+      "sha256": "67691bf762376036c778b70963fae896cf72289efefa4d6d450e9366981a8aec"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_mathematics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_mathematics/val-00000-of-00001.parquet",
+      "sha256": "d0d33970cb39b68d63cbdcd708099825d04118562c8d940f46805b527907d9a3"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_physics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_physics/val-00000-of-00001.parquet",
+      "sha256": "993415a68afbc7fe93e51027da272712c805fb95c6499c27cf5217041c559b43"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/high_school_politics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/high_school_politics/val-00000-of-00001.parquet",
+      "sha256": "ecac3d54c9fd1cae10e8b9d834da29753755013c52bdafdbe5e366631b21234e"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/ideological_and_moral_cultivation/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/ideological_and_moral_cultivation/val-00000-of-00001.parquet",
+      "sha256": "464ee51a7c011b424d0f28e58c11691c7a6a1bd3746e3118568ef8f7991d8aad"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/law/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/law/val-00000-of-00001.parquet",
+      "sha256": "bc940e6ca738861c9204507f613feef75447d909c70996b94c8f61624c4b0d6d"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/legal_professional/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/legal_professional/val-00000-of-00001.parquet",
+      "sha256": "07ed092ba4e5c3154bb8e54cce4dd20fcf4760f3d970704d4f4b82723bdce9c7"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/logic/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/logic/val-00000-of-00001.parquet",
+      "sha256": "e6729770934549cd4d038a6c7ae9a1448728237a262e30db87225c775aaddd05"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/mao_zedong_thought/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/mao_zedong_thought/val-00000-of-00001.parquet",
+      "sha256": "a1540f6c8692375ae3b27238da805e5e45631edd7a1751af36d52dd796d1b767"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/marxism/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/marxism/val-00000-of-00001.parquet",
+      "sha256": "e1bedacb86e74700b60cd1016ba68574b543f27e503e6b131ac8e976a6519e06"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/metrology_engineer/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/metrology_engineer/val-00000-of-00001.parquet",
+      "sha256": "fa22568373b0394011b9984098bb4c818e2d687855ebb11722b8655f88a254d2"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_biology/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_biology/val-00000-of-00001.parquet",
+      "sha256": "2d50c9b8702a2b5f71d6290dee07626c78895a3878c41a386560a8da6ccf3a89"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_chemistry/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_chemistry/val-00000-of-00001.parquet",
+      "sha256": "a34a2b9312b8bcaf76cbf6d0fca49088bf2d001b8701d26912acb020eaf3f859"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_geography/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_geography/val-00000-of-00001.parquet",
+      "sha256": "655590d36e68787ee87ce4ddaa54f90ddb60f477acdbf6d6e18dd1f0e2eb0f63"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_history/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_history/val-00000-of-00001.parquet",
+      "sha256": "83ba0d7e3d1e05286de0794ec0202e83e74af2b777681c7c30664e96dc7e250b"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_mathematics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_mathematics/val-00000-of-00001.parquet",
+      "sha256": "ddd771e85a96c091f45e7ea6bb6522f74e03e93e91c48e9f3dac11b8c5db3790"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_physics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_physics/val-00000-of-00001.parquet",
+      "sha256": "bd9ee6cfb116711a57393c0d4cdf12fb2d0bda6c1faa13e7f364d401941e220c"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/middle_school_politics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/middle_school_politics/val-00000-of-00001.parquet",
+      "sha256": "db974bc6ed17192998d95f3bae187470606f42b0c7e0bf31a544fd0b69ede594"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/modern_chinese_history/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/modern_chinese_history/val-00000-of-00001.parquet",
+      "sha256": "e929497b84918ec9860925167ad1ed13362ccc6d0575b8267235647c829c374a"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/operating_system/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/operating_system/val-00000-of-00001.parquet",
+      "sha256": "e3b4d7b1d959c06cbca221535fb84ad697f9c8b88a1f91de6a2007b3bca78840"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/physician/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/physician/val-00000-of-00001.parquet",
+      "sha256": "edc55a74f63c3c417da5a394ec0b1441f365946f3f226ec8959449d19e2c93ec"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/plant_protection/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/plant_protection/val-00000-of-00001.parquet",
+      "sha256": "7db8bdf498cf8049f5ba7c94b468ce2316ac647d1e0cd723d42b42d6bf973f04"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/probability_and_statistics/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/probability_and_statistics/val-00000-of-00001.parquet",
+      "sha256": "f1dccb78d4f9184e7fbf5fe5c7f98fa59b49db817e0cd7cf40019d95a2cf5911"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/professional_tour_guide/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/professional_tour_guide/val-00000-of-00001.parquet",
+      "sha256": "20d71b037cee629549ac1f2d6b5c8522b693c91381ad6c15c3795cfccbc9d247"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/sports_science/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/sports_science/val-00000-of-00001.parquet",
+      "sha256": "0c7ef158b24787ce1e10465571c485869f4fbc3f700f7758ca3a4f403f204a4a"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/tax_accountant/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/tax_accountant/val-00000-of-00001.parquet",
+      "sha256": "ddded210a4dd031794c47d27406b1079905ab1d6b11b7b3c116821dc0202b0f2"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/teacher_qualification/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/teacher_qualification/val-00000-of-00001.parquet",
+      "sha256": "d230bdc88779b5d9ea97f2967d196f7cf89f8e8838aafb64e7c157fdcfe293ee"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/urban_and_rural_planner/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/urban_and_rural_planner/val-00000-of-00001.parquet",
+      "sha256": "085be7aa2a4e22cd68fec7979132cc1205d351a216d1cb4ecb6f0bc8883d29b6"
+    },
+    {
+      "suite": "C-Eval",
+      "path": "ceval/veterinary_medicine/val-00000-of-00001.parquet",
+      "url": "https://huggingface.co/datasets/ceval/ceval-exam/resolve/617524a00b307ff6f9933702f724131fe12ca7ce/veterinary_medicine/val-00000-of-00001.parquet",
+      "sha256": "96c35c3e0dc9fc5ce4405323d56ebf3d6212eef608d224dc0a1ec53c4955555d"
+    },
+    {
+      "suite": "Chinese-SimpleQA",
+      "path": "simplehf/chinese_simpleqa.jsonl",
+      "url": "https://huggingface.co/datasets/OpenStellarTeam/Chinese-SimpleQA/resolve/336305fc5f1da8184e3f70aff4473408418383a0/chinese_simpleqa.jsonl",
+      "sha256": "c626ca34be9bdd2203a45a70af9fed177d48d9f12ba10ebe9bf10f0c6b1eb484"
+    },
+    {
+      "suite": "IFEval-ZH",
+      "path": "if_zh.jsonl",
+      "url": "https://huggingface.co/datasets/LLaMAX/BenchMAX_Domain_Translation/resolve/dfa035491e3e50a07c1badca0d2765a4871d35ce/ifeval/ifeval_zh.jsonl",
+      "sha256": "f0a25bf984c9cd345492c76f34644af07df44a6b4ea7ed51074cbddad4f83f17"
+    },
+    {
+      "suite": "BFCL-v3",
+      "path": "bfhf/BFCL_v3_simple.json",
+      "url": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/61fc0608cfd831fcfbbaa676ebdfef0ed963eeda/BFCL_v3_simple.json",
+      "sha256": "fbc37b2ad252bf9af985582e0e07b456173fe627d957491472ea9cef5fb83158"
+    },
+    {
+      "suite": "BFCL-v3",
+      "path": "bfhf/possible_answer/BFCL_v3_simple.json",
+      "url": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/61fc0608cfd831fcfbbaa676ebdfef0ed963eeda/possible_answer/BFCL_v3_simple.json",
+      "sha256": "2911a2bc00df82c4f999ffa64fedb0164cb88e96212ffa5972087eb91fd496ee"
+    },
+    {
+      "suite": "BFCL-v3",
+      "path": "bfhf/BFCL_v3_multiple.json",
+      "url": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/61fc0608cfd831fcfbbaa676ebdfef0ed963eeda/BFCL_v3_multiple.json",
+      "sha256": "aef168155ebd74b7ac2401198b201343bc7d16d7a3d7e0d4e6d8ee82c6969b2a"
+    },
+    {
+      "suite": "BFCL-v3",
+      "path": "bfhf/possible_answer/BFCL_v3_multiple.json",
+      "url": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/61fc0608cfd831fcfbbaa676ebdfef0ed963eeda/possible_answer/BFCL_v3_multiple.json",
+      "sha256": "244e00ce9395df948bcafc7bee64e8f9c87ef70887587d83cae45b13699f3047"
+    }
+  ]
+}
