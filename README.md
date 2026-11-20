@@ -59,4 +59,4 @@ shasum -a 256 -c SHA256SUMS
 
 ## 来源与许可
 
-基座为 Qwen 团队的 Qwen/Qwen3.5-4B（Apache-2.0），本项目进行了中文 SFT、权重合并与 Q8_0 量化。原权利声明与逐项数据许可见发布清单。[许可及署名](https://github.com/yrjmdqmmx/Tea-0.1-4B/blob/main/NOTICE.md)
+基座为 Qwen 团队的 Qwen/Qwen3.5-4B（Apache-2.0），本项目进行了中文 SFT、权重合并与 Q8_0 量化。原创控制器与代码采用 Apache-2.0，原创训练与评测数据采用 CC BY 4.0，第三方素材的逐项许可见发布清单。[许可及署名](https://github.com/yrjmdqmmx/Tea-0.1-4B/blob/main/NOTICE.md)
